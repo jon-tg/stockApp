@@ -1,0 +1,103 @@
+@font-face {
+  font-family: PTSerif;
+  src: url("../fonts/PTSerif-Regular.ttf");
+}
+.App {
+  text-align: center;
+  font-family: PTSerif;
+  letter-spacing:.6px;
+}
+
+body
+{
+  background-image:radial-gradient(rgb(0,0,0,.5) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+#form
+{
+  position:relative;
+  top:18vh;
+  border: 1.5px inset rgb(0, 0, 0, .5);
+  border-image: linear-gradient( rgb(255, 255, 255), rgba(0, 0, 0, 0.25)) 1;
+  margin-right:auto;
+  margin-left:auto;
+  padding:3vw;
+  width:50%;
+  
+}
+
+#form p
+{
+  margin-bottom:.5vh;
+}
+
+#data
+{
+  top:25vh;
+  margin-left:53vw;
+  margin-right:53vw;
+  width:100%;
+  position:relative;
+}
+
+#data p
+{
+  margin:.5vh;
+  padding:0;
+
+}
+#data-header
+{
+  position:relative;
+  margin:0;
+  padding-top:3vh;
+  bottom:2vh;
+  left:0;
+}
+
+#form h2
+{
+  margin:0;
+  padding:0;
+}
+
+#data.hidden {
+  opacity: 0;
+  transform: translateX(-60%);
+}
+
+#data.visible {
+  opacity: 1;
+  transform: translateX(-40%);
+  transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#charts
+{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  width:70%;
+
+  
+}
+#stock-data
+{
+  display:flex;
+  width:40%;
+  margin-top:1vh;
+  margin-bottom:5vh;
+  flex-wrap:wrap;
+  margin-left:21%;
+}
+#header
+{
+  margin-right:28vw;
+}
+
+#charts li
+{
+  position:relative;
+  left:2vw;
+}
