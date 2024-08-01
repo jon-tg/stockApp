@@ -39,7 +39,7 @@ function App() {
                 <h2>Stock Data Application</h2>
                 <form id='stock-info' onSubmit={handleSubmit(submit)}>
                     <label htmlFor='company'>Enter a company stock symbol: </label>
-                    <input id='company' {...register("company", { required: true })} type='text' placeholder='Enter company name' />
+                    <input id='company' {...register("company", { required: true })} type='text' autocomplete='off' placeholder='Enter company name' />
                     <button type="submit">Submit</button>
                 </form>
             </div>
